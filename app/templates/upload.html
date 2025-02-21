@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0">Upload Resume</h4>
+            </div>
+            <div class="card-body">
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="resumeFile" class="form-label">Choose Resume File (PDF, DOC, DOCX)</label>
+                        <input type="file" class="form-control" id="resumeFile" name="file" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload and Parse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

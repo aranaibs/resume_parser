@@ -1,0 +1,9 @@
+Flask
+PyMuPDF
+python-docx
+textract
+torch
+transformers
+pytest
+python-dotenv
+Werkzeug
