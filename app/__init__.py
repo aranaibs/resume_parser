@@ -5,7 +5,9 @@ import os
 def create_app(config_class=Config):
     """Create and configure the Flask application."""
     # Initialize Flask app
-    app = Flask(__name__)
+    app = Flask(__name__,
+                template_folder='templates',
+                static_folder='static')
     
     # Load configuration
     app.config.from_object(config_class)
